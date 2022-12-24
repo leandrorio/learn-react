@@ -5,7 +5,7 @@ import Titulo from './components/Titulo';
 function App() {
   return (
     <div className="App">
-      <Titulo texto="Teste de CSS" />
+      <Titulo texto="Teste de React Fragments" />
       <main>
         <List />
       </main>
