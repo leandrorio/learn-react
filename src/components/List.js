@@ -4,9 +4,10 @@ function List() {
   return (
     <div>
       <ul>
-        <Item content="teste 1" />
-        <Item content="teste 2" />
-        <Item content="teste 3" />
+        <Item marca="Fiat" anoLancamento={2000} />
+        <Item marca="VW" anoLancamento={2005} />
+        <Item marca="Renault" anoLancamento={2020} />
+        <Item />
       </ul>
     </div>
   );
