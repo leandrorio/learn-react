@@ -1,14 +1,22 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 import Pessoa from './components/Pessoa';
-import Titulo from './components/Titulo';
+import SayMyName from './components/SayMyName';
 
 function App() {
+
+  const raf = "Rafael";
+
   return (
     <div className="App">
-      <Titulo texto="Teste de CSS" />
-      <main>
-        <Pessoa nome="Leandro Rio" foto="https://via.placeholder.com/100" idade="39" profissao="Ger. Desenv. 1" />
-      </main>
+      <HelloWorld />
+      <SayMyName nome="Leandro" />
+      <SayMyName nome="Leticia" />
+      <SayMyName nome="Miguel" />
+      <SayMyName nome="Samuel" />
+      <SayMyName nome={raf} />
+      <hr />
+      <Pessoa nome="Leandro Rio" foto="https://via.placeholder.com/100" idade="39" profissao="Ger. Desenv. 1" />
     </div>
   );
 }
