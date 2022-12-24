@@ -1,5 +1,5 @@
 import './App.css';
-import Pessoa from './components/Pessoa';
+import List from './components/List';
 import Titulo from './components/Titulo';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Titulo texto="Teste de CSS" />
       <main>
-        <Pessoa nome="Leandro Rio" foto="https://via.placeholder.com/100" idade="39" profissao="Ger. Desenv. 1" />
+        <List />
       </main>
     </div>
   );
