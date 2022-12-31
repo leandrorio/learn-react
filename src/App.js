@@ -1,13 +1,17 @@
 import './App.css';
+import Lista from './components/Lista';
 import Titulo from './components/Titulo';
-import Condicional from './components/Condicional';
 
 function App() {
+
+  const meusItens = ['Miguel', 'Samuel', 'Rafael'];
+
   return (
     <div className="App">
-      <Titulo texto="Teste de Renderização condicional" />
+      <Titulo texto="Teste de Renderização de Listas" />
       <main>
-        <Condicional /> 
+        <Lista itens={meusItens} />
+        <Lista itens={[]} />
       </main>            
     </div>
   );
