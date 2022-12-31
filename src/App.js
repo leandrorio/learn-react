@@ -1,17 +1,20 @@
 import './App.css';
-import Lista from './components/Lista';
+import { useState } from 'react';
+
 import Titulo from './components/Titulo';
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
 
 function App() {
 
-  const meusItens = ['Miguel', 'Samuel', 'Rafael'];
+  const [nome, setNome] = useState()
 
   return (
     <div className="App">
-      <Titulo texto="Teste de Renderização de Listas" />
+      <Titulo texto="Teste de State Lift" />
       <main>
-        <Lista itens={meusItens} />
-        <Lista itens={[]} />
+        <SeuNome setNome={setNome} />
+        <Saudacao nome={nome} />
       </main>            
     </div>
   );
