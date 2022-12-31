@@ -1,18 +1,14 @@
 import './App.css';
-import Evento from './components/Evento';
 import Form from './components/Form';
 import Titulo from './components/Titulo';
 
 function App() {
   return (
     <div className="App">
-      <Titulo texto="Teste de Eventos" />
+      <Titulo texto="Teste de useState" />
       <main>
-        <Evento numero={1} />
-        <Evento numero={2} />
-      </main>
-      <hr />
-      <Form />
+        <Form />
+      </main>            
     </div>
   );
 }
