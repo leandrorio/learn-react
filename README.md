@@ -1,3 +1,6 @@
+Link Youtube [videos](https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO)
+Link Git [projeto curso](https://github.com/matheusbattisti/curso_react_yt)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
