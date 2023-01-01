@@ -14,10 +14,10 @@ function App() {
     <div className="App">
       <Router>
         <header>
-          <Titulo texto="Teste de React Router" />
+          <Titulo texto="Teste de React Icons" />
           <Navbar />
         </header>
-        
+
         <main>
           <Routes>
             <Route exact path="/" element={<Home/>} />
