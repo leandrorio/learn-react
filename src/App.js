@@ -1,21 +1,34 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { useState } from 'react';
+import Footer from './components/layout/Footer';
 
+import Navbar from './components/layout/Navbar';
 import Titulo from './components/Titulo';
-import SeuNome from './components/SeuNome';
-import Saudacao from './components/Saudacao';
+import Contato from './pages/Contato';
+import Empresa from './pages/Empresa';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 function App() {
-
-  const [nome, setNome] = useState()
-
   return (
     <div className="App">
-      <Titulo texto="Teste de State Lift" />
-      <main>
-        <SeuNome setNome={setNome} />
-        <Saudacao nome={nome} />
-      </main>            
+      <Router>
+        <header>
+          <Titulo texto="Teste de React Router" />
+          <Navbar />
+        </header>
+        
+        <main>
+          <Routes>
+            <Route exact path="/" element={<Home/>} />
+            <Route path="/empresa" element={<Empresa />}/>
+            <Route path="/contato" element={<Contato />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>      
+
+      </Router>
+      <Footer />
     </div>
   );
 }
